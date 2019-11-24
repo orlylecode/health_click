@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <RelativeLayout
+        android:id="@+id/titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTexte">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/shape_list">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Etape1: vos parametres"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titre"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/shape">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attention !"
+            android:textColor="@color/colorTexte"
+            android:textSize="15dp"
+            android:textStyle="italic|bold" />
+
+        <ImageView
+            android:id="@+id/war"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_warning_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/war"
+            android:layout_margin="2dp"
+            android:padding="10dp"
+            android:text="Pensez a configurer vos informations dans les parametre\n pour un resultat personnalise."
+            android:textColor="@color/colorTexte"
+            android:textSize="12dp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notice"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/shape">
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/colorTexte"
+            android:backgroundTint="@color/colorTexte"
+            android:gravity="start"
+            android:hint="votre age"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textAlignment="viewStart" />
+
+        <Spinner
+            android:id="@+id/sexe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/age"
+            android:layout_gravity="start"
+            android:layout_margin="10dp"
+            android:background="@color/colorTexte"
+            android:backgroundTint="@color/colorTexte"
+            android:entries="@array/sexe"
+            android:padding="10dp"
+            android:textAlignment="viewStart" />
+
+        <Spinner
+            android:id="@+id/langeu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sexe"
+            android:layout_gravity="start"
+            android:layout_margin="10dp"
+            android:background="@color/colorTexte"
+            android:backgroundTint="@color/colorTexte"
+            android:entries="@array/langue"
+            android:padding="10dp"
+            android:textAlignment="viewStart" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

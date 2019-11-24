@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">health click</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Diagnosis Checker</string>
+    <string name="nav_header_subtitle">by orlydevignyngahe@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_diagnosis">Diagnosis</string>
+    <string name="menu_maladies">Maladies</string>
+    <string name="menu_remedes">Remedes</string>
+    <string name="menu_parametre">Parametres</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_maladies">Maladies</string>
+
+    <string name="title_activity_error">Error</string>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_remedes_list">RemedesList</string>
+    <string name="title_activity_maladie_list">MaladieList</string>
+    <string name="title_activity_diagnosis_cart">DiagnosisCart</string>
+    <string name="title_activity_diagnosis_form">DiagnosisForm</string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Smart Diagnosis</string>
+    <string name="slide_1_desc">Grace a un receuil minimum d\'information sur vous, nous analysons vos symptomes et vous proposons des maladies qui en resultent avec un ensembles de statistique a fin de vous orienter vers des specialistes.</string>
+
+    <string name="slide_2_title">Maladies</string>
+    <string name="slide_2_desc">Visitez un tres grand nombre de maladies avec une description detaille, symptomes et traitements associes </string>
+
+    <string name="slide_3_title">Med Index</string>
+    <string name="slide_3_desc">En plus, nous vous offrons une veritable mine d\'or de medicaments avec leur prix(+-10%), posolgies, principes actif, (...) le tout grace a une recherche rapide intuitive et avancee</string>
+
+    <string name="slide_4_title">pharmacies </string>
+    <string name="slide_4_desc">Une geolocalisation de cliniques, pharmacies et pharmacies de garde, (...) avec des contacts des personnels et professionnel de la sante</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+
+    <string-array name="sexe">
+        <item>Sexe : Home</item>
+        <item>Sexe : Femme</item>
+    </string-array>
+
+    <string-array name="langue">
+        <item>Langue : francais</item>
+        <item>Langue : anglais</item>
+        <item>Langue : espagnol</item>
+        <item>Langue : allemand</item>
+    </string-array>
+    <string name="title_activity_health_marker">Health Marker Point</string>
+</resources>

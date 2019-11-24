@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4D464D">
+
+        <RelativeLayout
+            android:id="@+id/c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/conditionnementh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="Conditionnement"
+                android:textAlignment="center"
+                android:textColor="@color/colorTexte"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/conditionnement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/conditionnementh"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Epistaxis"
+                android:textAlignment="center"
+                android:textColor="@color/colorTexte"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/principe_actifh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/conditionnement"
+                android:layout_margin="4dp"
+                android:text="Principe Actif "
+                android:textAlignment="center"
+                android:textColor="@color/colorTexte"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/principe_actif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/principe_actifh"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text=" Enterotoxigenic Escherichia coli infection"
+                android:textAlignment="center"
+                android:textColor="@color/colorTexte"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/forme_dosageh"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/principe_actif"
+                android:layout_margin="4dp"
+                android:text="Forme et dosage"
+                android:textAlignment="center"
+                android:textColor="@color/colorTexte"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/forme_dosage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/forme_dosageh"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Enterotoxigenic Escherichia coli infection"
+                android:textAlignment="center"
+                android:textColor="@color/colorTexte"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/classeh"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/forme_dosage"
+                android:layout_margin="4dp"
+                android:text="classe Medicamenteuse "
+                android:textAlignment="center"
+                android:textColor="@color/colorTexte"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/classe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/classeh"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Orly le code "
+                android:textAlignment="center"
+                android:textColor="@color/colorTexte"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/posologieh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/classe"
+                android:layout_margin="4dp"
+                android:text="Posologie recommandée "
+                android:textAlignment="center"
+                android:textColor="@color/colorTexte"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/posologie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/posologieh"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="1 à 2 applications par jour "
+                android:textAlignment="center"
+                android:textColor="@color/colorTexte"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/c"
+            android:layout_marginLeft="150dp">
+
+            <TextView
+                android:id="@+id/laboratoireh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:text="laboratoire"
+                android:textColor="@color/colorTexte"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/laboratoire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/laboratoireh"
+                android:layout_margin="5dp"
+                android:gravity="end"
+                android:text="Orly le code "
+                android:textColor="@color/colorTexte"
+                android:textSize="15dp"
+                android:textStyle="italic" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

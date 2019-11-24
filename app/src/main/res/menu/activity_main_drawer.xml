@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/diagnosis"
+            android:icon="@drawable/ic_timeline_black_24dp"
+            android:title="@string/menu_diagnosis" />
+        <item
+            android:id="@+id/maladies"
+            android:icon="@drawable/ic_accessibility_black_24dp"
+            android:title="@string/menu_maladies" />
+        <item
+            android:id="@+id/remedes"
+            android:icon="@drawable/ic_healing_black_24dp"
+            android:title="@string/menu_remedes" />
+        <item
+            android:id="@+id/parametre"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_parametre" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_send" />
+        </menu>
+    </item>
+
+</menu>

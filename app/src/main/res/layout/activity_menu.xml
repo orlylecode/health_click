@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".Activity.Menu">
+    >
+
+    <RelativeLayout
+        android:id="@+id/orly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@drawable/shape1">
+
+            <TextView
+                android:id="@+id/titre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:maxLines="1"
+                android:text="SMART DIAGNOSIS"
+                android:textAlignment="center"
+                android:textColor="@color/colorTexte"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titre"
+                android:layout_marginLeft="159dp"
+                android:maxLines="1"
+                android:text="by cogitech@gmail.com"
+                android:textAlignment="center"
+                android:textColor="#6E6F74"
+                android:textSize="10dp"
+                android:textStyle="italic" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/menuMarge"
+                android:background="@drawable/shape"
+                android:orientation="vertical"
+                android:padding="30dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/diagnosis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/menuMarge"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/menuheight"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/icons_system_task_64" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:maxLines="1"
+                            android:text="Diagnosis"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/maladies"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/menuMarge"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/menuheight"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/icons_book_64" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:maxLines="1"
+                            android:text="Maladies"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/remedes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/menuMarge"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/menuheight"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/icons_search_property_64" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:maxLines="1"
+                            android:text="Med-Index"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/menuMarge"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+
+                            android:layout_height="@dimen/menuheight"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/icons_place_marker_64" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:maxLines="1"
+                            android:text="Pharmacies"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:id="@+id/parametre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/menuMarge"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/menuheight"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/icons_settings_64" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:maxLines="1"
+                            android:text="Parametres"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/aide"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/menuMarge"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/menuheight"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/ic_live_help_black_24dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:maxLines="1"
+                            android:text="Aide"
+                            android:textAlignment="center"
+                            android:textColor="#FFF"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titre"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attention !"
+            android:textColor="@color/colorTexte"
+            android:textSize="15dp"
+            android:textStyle="italic|bold" />
+
+        <ImageView
+            android:id="@+id/war"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ic_warning_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/war"
+            android:layout_margin="2dp"
+            android:padding="5dp"
+            android:text="Les informations fournis par cette application n'ont pas vocation a subtituer aux recommandations et aux preconisations de votre medecin ou de votre pharmacien."
+            android:textColor="@color/colorTexte"
+            android:textSize="12dp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+</LinearLayout>
