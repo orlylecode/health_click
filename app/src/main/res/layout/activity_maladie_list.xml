@@ -1,63 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
     tools:context=".Activity.MaladieList">
 
-    <RelativeLayout
-        android:id="@+id/titre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorTexte">
 
-        <RelativeLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:background="@drawable/shape_list">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="Liste de Maladies"
-                android:textAlignment="center"
-                android:textColor="#FFF"
-                android:textSize="20dp" />
+            android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/home"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:background="@drawable/ic_home_black_24dp"
-                tools:ignore="RtlCompat" />
-        </RelativeLayout>
-    </RelativeLayout>
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/ic_menu_black_24dp" />
+            <TextView
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Liste de Maladies"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="25dp" />
+        </LinearLayout>
 
+    </LinearLayout>
 
-    <RelativeLayout
+    <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/titre"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/shape"
-        android:orientation="horizontal">
+        android:background="@drawable/shape_new_1"
+        android:orientation="vertical">
 
         <SearchView
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
             android:id="@+id/search"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"></SearchView>
+            android:padding="5dp"></SearchView>
 
-        <ListView
-            android:id="@+id/maladies_list"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/search"></ListView>
-    </RelativeLayout>
+            android:background="@drawable/shape_new_2"
+            android:paddingTop="50dp">
 
-</RelativeLayout>
+            <ListView
+                android:id="@+id/maladies_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

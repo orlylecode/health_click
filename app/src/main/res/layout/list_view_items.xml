@@ -17,7 +17,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
-            android:background="#986584"
+            android:background="#4A6542"
             android:gravity="center"
             android:src="@drawable/diagnosis"
             android:text="1"

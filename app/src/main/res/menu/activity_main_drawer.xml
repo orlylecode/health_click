@@ -6,19 +6,19 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/diagnosis"
-            android:icon="@drawable/ic_timeline_black_24dp"
+            android:icon="@drawable/icons_system_task_64"
             android:title="@string/menu_diagnosis" />
         <item
             android:id="@+id/maladies"
-            android:icon="@drawable/ic_accessibility_black_24dp"
+            android:icon="@drawable/icons_book_64"
             android:title="@string/menu_maladies" />
         <item
             android:id="@+id/remedes"
-            android:icon="@drawable/ic_healing_black_24dp"
+            android:icon="@drawable/icons_search_property_64"
             android:title="@string/menu_remedes" />
         <item
             android:id="@+id/parametre"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/icons_settings_64"
             android:title="@string/menu_parametre" />
     </group>
 
@@ -26,7 +26,7 @@
         <menu>
             <item
                 android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/icons_place_marker_64"
                 android:title="@string/menu_share" />
             <item
                 android:id="@+id/nav_send"

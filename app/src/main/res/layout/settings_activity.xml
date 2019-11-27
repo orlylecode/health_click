@@ -1,105 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff">
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context=".Activity.Menu">
 
-    <RelativeLayout
-        android:id="@+id/titre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorTexte">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:background="@drawable/shape_list">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="parametres"
-                android:textAlignment="center"
-                android:textColor="#FFF"
-                android:textSize="20dp" />
+            android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/home"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:background="@drawable/ic_home_black_24dp" />
-        </RelativeLayout>
-    </RelativeLayout>
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/titre"
-        android:layout_marginTop="10dp">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <RelativeLayout
-                android:id="@+id/notice"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/ic_menu_black_24dp" />
+            <TextView
+                android:layout_gravity="center_vertical|center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:background="@drawable/shape">
+                android:text="parametres"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="30dp" />
+        </LinearLayout>
 
-                <TextView
-                    android:id="@+id/message"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:text="Vos parametres sont ; "
-                    android:textColor="@color/colorTexte"
-                    android:textSize="15dp"
-                    android:textStyle="italic|bold" />
+    </LinearLayout>
 
-                <TextView
-                    android:id="@+id/default_values"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/message"
-                    android:layout_margin="5dp"
-                    android:text=""
-                    android:textColor="@color/colorTexte"
-                    android:textSize="12dp"
-                    android:textStyle="italic" />
-            </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_new_1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/orly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp">
 
             <TextView
-                android:id="@+id/section"
+                android:id="@+id/message"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/notice"
-                android:layout_margin="10dp"
-                android:text="Parametres par defauft"
+                android:layout_margin="5dp"
+                android:text="Vos parametres sont : "
                 android:textColor="#000"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:textStyle="italic|bold" />
 
-            <View
-                android:id="@+id/divider"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_below="@id/section"
-                android:layout_marginRight="8dp"
-                android:background="@color/colorTexte" />
+            <TextView
+                android:id="@+id/default_values"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/message"
+                android:layout_margin="5dp"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="12dp"
+                android:textStyle="italic" />
+        </LinearLayout>
 
-            <RelativeLayout
-                android:id="@+id/form"
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_new_2"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@+id/divider"
-                android:background="#D8DFDD">
-
+                android:paddingTop="30dp">
                 <EditText
                     android:id="@+id/age"
                     android:layout_width="match_parent"
@@ -120,7 +102,6 @@
                     android:id="@+id/divider1"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_below="@id/age"
                     android:layout_marginRight="8dp"
                     android:background="#85878D" />
 
@@ -128,7 +109,6 @@
                     android:id="@+id/sexe"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/age"
                     android:layout_margin="10dp"
                     android:background="#fff"
                     android:entries="@array/sexe"
@@ -140,7 +120,6 @@
                     android:id="@+id/divider2"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_below="@id/sexe"
                     android:layout_marginRight="8dp"
                     android:background="#85878D" />
 
@@ -148,7 +127,6 @@
                     android:id="@+id/langeu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/sexe"
                     android:layout_gravity="start"
                     android:layout_margin="10dp"
                     android:background="#fff"
@@ -160,23 +138,19 @@
                     android:id="@+id/divider3"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-                    android:layout_below="@id/langeu"
                     android:layout_marginRight="8dp"
                     android:background="#85878D" />
-            </RelativeLayout>
 
-            <Button
-                android:id="@+id/save"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_below="@id/form"
-                android:layout_alignParentRight="true"
-                android:layout_margin="5dp"
-                android:text="save" />
-        </RelativeLayout>
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:text="save" />
+            </LinearLayout>
+        </ScrollView>
 
+    </LinearLayout>
 
-    </ScrollView>
-
-
-</RelativeLayout>
+</LinearLayout>

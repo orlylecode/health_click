@@ -1,7 +1,6 @@
 package io.cogitech.healthclick.Activity.Manager;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,7 +14,6 @@ import androidx.core.text.HtmlCompat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-import java.util.Random;
 
 import io.cogitech.healthclick.Model.Symptom;
 import io.cogitech.healthclick.R;
@@ -70,12 +68,12 @@ public class SymptomListViewAdapter extends BaseAdapter {
         holder.name.setText(HtmlCompat.fromHtml(symptomeList.get(position).getName(), Html.FROM_HTML_MODE_COMPACT));
         holder.Id.setText("" + symptomeList.get(position).getID());
 
-        ///////////////////////random color ////////////////////////
+       /* ///////////////////////random color ////////////////////////
         Random rnd = new Random();
         int color = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
         ///////////////////////random color ////////////////////////
 
-        holder.Id.setBackgroundColor(color);
+        holder.Id.setBackgroundColor(color);*/
 
         if (addedList.contains(symptomeList.get(position).getID())) {
             holder.chekbox.setImageResource(R.drawable.ic_check_box_black_24dp);

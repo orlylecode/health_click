@@ -28,12 +28,13 @@
         android:background="@android:color/white" />
 
     <Button
+        android:background="#7EEC5656"
         android:id="@+id/btn_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:background="@null"
+        android:elevation="0.2dp"
         android:text="@string/next"
         android:textColor="@android:color/white" />
 
@@ -43,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
-        android:background="@null"
+        android:background="#7EEC5656"
         android:text="MENU"
         android:textColor="@android:color/white" />
 

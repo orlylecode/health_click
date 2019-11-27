@@ -1,223 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
-    android:fitsSystemWindows="true"
-    tools:context=".Activity.Maladies">
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context=".Activity.Remede">
 
-    <RelativeLayout
-        android:id="@+id/titre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorTexte">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:background="@drawable/shape_list">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="Maladies"
-                android:textAlignment="center"
-                android:textColor="#FFF"
-                android:textSize="20dp" />
+            android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/home"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:background="@drawable/ic_home_black_24dp" />
-        </RelativeLayout>
-    </RelativeLayout>
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/ic_menu_black_24dp" />
+            <TextView
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Detail Maladie"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+    </LinearLayout>
 
     <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/titre"
-        android:layout_margin="10dp"
-        android:background="@drawable/shape">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_new_1"
+        android:paddingTop="50dp"
+        android:paddingBottom="10dp">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
 
-            <RelativeLayout
-                android:id="@+id/name_block"
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/name_title"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp">
+                android:text="Nom et Synonymes"
+                android:textAlignment="center"
+                android:textColor="@color/colorTexteNoir"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
-                <LinearLayout
-                    android:id="@+id/name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/shape_tilte">
 
-                    <TextView
-                        android:id="@+id/name_title"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Nom et Synonymes"
-                        android:textAlignment="center"
-                        android:textColor="@color/colorTexte"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/name_content"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/name"
-                    android:layout_margin="2dp"
-                    android:textColor="@color/colorTexte" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/description_block"
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/name_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/name_block"
-                android:layout_margin="5dp">
+                android:layout_margin="2dp"
+                android:text="Flu "
+                android:textAlignment="center"
+                android:textColor="@color/colorTexteNoir"
+                android:textSize="17dp" />
 
-                <LinearLayout
-                    android:id="@+id/description"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/shape_tilte">
-
-                    <TextView
-                        android:id="@+id/description_title"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Description"
-                        android:textAlignment="center"
-                        android:textColor="@color/colorTexte"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/description_content"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/description"
-                    android:layout_margin="2dp"
-                    android:textColor="@color/colorTexte" />
-            </RelativeLayout>
-
-
-            <RelativeLayout
-                android:id="@+id/symptome_block"
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/description_title"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/condition_block"
-                android:layout_margin="5dp">
+                android:text="Description"
+                android:textAlignment="center"
+                android:textColor="@color/colorTexteNoir"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
-                <LinearLayout
-                    android:id="@+id/symptome"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/shape_tilte">
-
-                    <TextView
-                        android:id="@+id/symptome_title"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Symptoms Posible"
-                        android:textAlignment="center"
-                        android:textColor="@color/colorTexte"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/symptome_content"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/symptome"
-                    android:layout_margin="2dp"
-                    android:textColor="@color/colorTexte" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/condition_block"
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/description_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/description_block"
-                android:layout_margin="5dp">
+                android:layout_margin="2dp"
+                android:text="Flu is a disease of the human's respiratory system. It is highly contagious and spreads usually by the sneezes and coughs of an infected person. People can also catch a flu by shaking hands of an infected person. Adults are contagious one to two days before getting symptoms and up to seven days after becoming sick. This means that people can spread the virus before they even know that they are infected. More than 200'000 people are hospitalized every year due to complications from a flu and thousands die every year as a result of it. A flu epidemic can last numerous weeks in a country."
+                android:textAlignment="center"
+                android:textColor="@color/colorTexteNoir"
+                android:textSize="17dp" />
 
-                <LinearLayout
-                    android:id="@+id/condition"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/shape_tilte">
-
-                    <TextView
-                        android:id="@+id/condition_title"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Condition Medical"
-                        android:textAlignment="center"
-                        android:textColor="@color/colorTexte"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/condition_content"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/condition"
-                    android:layout_margin="2dp"
-                    android:textColor="@color/colorTexte" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:id="@+id/traitement_block"
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/symptome_title"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/symptome_block"
-                android:layout_margin="5dp">
+                android:text="Symptoms Posible"
+                android:textAlignment="center"
+                android:textColor="@color/colorTexteNoir"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
-                <LinearLayout
-                    android:id="@+id/traitement"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/shape_tilte">
-
-                    <TextView
-                        android:id="@+id/traitement_title"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Description du traitement"
-                        android:textAlignment="center"
-                        android:textColor="@color/colorTexte"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/traitement_content"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/traitement"
-                    android:layout_margin="2dp"
-                    android:textColor="@color/colorTexte" />
-            </RelativeLayout>
+            <TextView
+                android:id="@+id/symptome_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="Reduced appetite,Shortness of breath,Eye redness,Sputum,Burning in the throat,Chest pain,Fever,Pain in the limbs,Sore throat,Cough,Headache,Swollen glands on the neck,Swollen glands in the armpits,Tiredness,Runny nose,Sneezing,Chills,Sweating,Stuffy nose,Cough with sputum,Stiff neck,Muscle weakness
+                ProfName : nInfluenza"
+                android:textAlignment="center"
+                android:textColor="@color/colorTexteNoir"
+                android:textSize="17dp" />
 
 
-        </RelativeLayout>
+            <TextView
+                android:id="@+id/condition_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Condition Medical"
+                android:textAlignment="center"
+                android:textColor="@color/colorTexteNoir"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
+            <TextView
+                android:id="@+id/condition_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="When the infection occurs in healthy young people, it is usually not dangerous and lasts around one or two weeks. In some cases a dry cough may develop and last a bit longer. Elderly and those with pre-existing illnesses have a higher risk for complications. For this reason it’s recommended that these groups get vaccinated. Swine and bird flus are caused by slight different influenza viruses, but causing similar symptoms. Flu typically develops rapidly, with fever (sometimes accompanied with chills), muscle pain, headache, a dry and painful cough, sore throat, and exhaustion or fatigue. It’s important to note that the flu is different from the common cold, which is often also caused by a virus, but causes milder symptoms."
+                android:textAlignment="center"
+                android:textColor="@color/colorTexteNoir"
+                android:textSize="17dp" />
+
+
+            <TextView
+                android:id="@+id/traitement_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description du traitement"
+                android:textAlignment="center"
+                android:textColor="@color/colorTexteNoir"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/traitement_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="Even today flu can have fatal consequences for those with pre-existing conditions and requires a hospital stay with emergency medical measures. Normally it is self-limited and the body recovers by itself. A doctor may prescribe medication to help shorten the course of the flu if taken early. Bed rest and staying hydrated are usually sufficient. Medications such as Ibuprofen or Aspirin can lower a fever and relieve symptoms, but they will not shorten the course of the illness and should be used in children with caution. Flu vaccine is recommended for the following groups at risk: nursing infants, people over 60, people with compromised immune systems, and pregnant women."
+                android:textAlignment="center"
+                android:textColor="@color/colorTexteNoir"
+                android:textSize="17dp" />
+
+        </LinearLayout>
     </ScrollView>
 
-
-</RelativeLayout>
+</LinearLayout>

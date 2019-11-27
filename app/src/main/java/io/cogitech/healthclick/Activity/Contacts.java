@@ -43,7 +43,7 @@ public class Contacts extends AppCompatActivity implements SearchView.OnQueryTex
         });
         new PharmacieListAsynctask(this, this).execute();
 
-        list = findViewById(R.id.remedes_list);
+        list = findViewById(R.id.pharmacies);
         adapter = new PharmacieListViewAdapter(this, pharmacies);
         list.setAdapter(adapter);
 

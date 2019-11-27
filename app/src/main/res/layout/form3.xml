@@ -1,55 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark">
+    android:background="@color/colorAccent"
+    android:orientation="vertical">
 
-    <RelativeLayout
-        android:id="@+id/titre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorTexte">
 
-        <RelativeLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:background="@drawable/shape_list">
-
+            android:orientation="horizontal">
             <TextView
+                android:layout_gravity="center_vertical|center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:gravity="end"
                 android:text="Etape 3: + de symptomes ?"
                 android:textAlignment="center"
                 android:textColor="#FFF"
                 android:textSize="20dp" />
-        </RelativeLayout>
+        </LinearLayout>
 
-    </RelativeLayout>
+    </LinearLayout>
 
+    <LinearLayout
 
-    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/titre"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="60dp"
-        android:background="@drawable/shape"
-        android:orientation="horizontal">
+        android:background="@drawable/shape_new_1"
+        android:orientation="vertical">
 
-        <SearchView
-            android:id="@+id/search2"
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"></SearchView>
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:text="grace a vos symptomes entree precedament , nous avons pu en resortir un autre ensemble de symptome . selectionner les symptomes que vous avez pu oublier puis cliquez sur le boutton Diagnosis ou faites clisser vers la gauche"
+            android:textAlignment="center" />
 
-        <ListView
-            android:id="@+id/list2"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/search2"></ListView>
-    </RelativeLayout>
+            android:background="@drawable/shape_new_2"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
 
-</RelativeLayout>
+            <SearchView
+                android:id="@+id/search2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"></SearchView>
+
+            <ListView
+                android:id="@+id/list2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

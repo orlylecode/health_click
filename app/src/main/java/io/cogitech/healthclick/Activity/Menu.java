@@ -5,7 +5,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.RelativeLayout;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -38,7 +38,7 @@ public class Menu extends AppCompatActivity implements get.GetResult, InternetCo
     private AccessToken accessToken = new AccessToken();
     private CRUDImp repository = new CRUDImp();
     private InternetAvailabilityChecker mInternetAvailabilityChecker;
-    private RelativeLayout layout;
+    private LinearLayout layout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

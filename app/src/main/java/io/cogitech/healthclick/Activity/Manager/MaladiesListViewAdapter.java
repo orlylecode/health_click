@@ -1,7 +1,6 @@
 package io.cogitech.healthclick.Activity.Manager;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +11,6 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-import java.util.Random;
 
 import io.cogitech.healthclick.Model.Issue;
 import io.cogitech.healthclick.R;
@@ -66,12 +64,12 @@ public class MaladiesListViewAdapter extends BaseAdapter {
         holder.name.setText(maladieList.get(position).getName());
         holder.Id.setText("" + maladieList.get(position).getID());
 
-        ///////////////////////random color ////////////////////////
+/*        ///////////////////////random color ////////////////////////
         Random rnd = new Random();
         int color = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
         ///////////////////////random color ////////////////////////
 
-        holder.Id.setBackgroundColor(color);
+        holder.Id.setBackgroundColor(color);*/
         holder.chekbox.setImageResource(R.drawable.ic_remove_red_eye_black_24dp);
 
         return view;
